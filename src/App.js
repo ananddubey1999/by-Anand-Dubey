@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LoginPage from "./LoginPage";
-import TableComponent from "./TableComponent";
 import Navbar from "./Navbar";
+import CardListComponent from "./CardListComponent";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -15,7 +15,7 @@ const App = () => {
       <Navbar/>
       {isLoggedIn ? (
         
-        <TableComponent />
+        <CardListComponent />
       ) : (
         <LoginPage handleLogin={handleLogin} />
       )}

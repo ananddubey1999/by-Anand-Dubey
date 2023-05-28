@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./CardList.css";
 
 const CardListComponent = () => {
   const [data, setData] = useState([]);
@@ -7,6 +6,7 @@ const CardListComponent = () => {
   const [searchText, setSearchText] = useState("");
   const [isFiltered, setIsFiltered] = useState(false);
   const [viewType, setViewType] = useState("table");
+  const [sortKey, setSortKey] = useState("");
 
   useEffect(() => {
     fetchData().then((data) => {
@@ -39,7 +39,17 @@ const CardListComponent = () => {
       setIsFiltered(false);
     }
   };
-
+  
+  const handleSort = (key) => {
+    let sortedData = [...filteredData];
+    sortedData.sort((a, b) => {
+      if (a[key] < b[key]) return -1;
+      if (a[key] > b[key]) return 1;
+      return 0;
+    });
+    setFilteredData(sortedData);
+    setSortKey(key);
+  };
   const handleToggle = () => {
     setViewType(viewType === "table" ? "card" : "table");
   };
@@ -51,8 +61,9 @@ const CardListComponent = () => {
         placeholder="Search by name..."
         value={searchText}
         onChange={handleSearch}
+        className="searchInput"
       />
-      {isFiltered && <p>You are viewing filtered results.</p>}
+      {/* {isFiltered && <p>You are viewing filtered results.</p>} */}
       <button onClick={handleToggle}>
         Switch to {viewType === "table" ? "Card" : "Table"} View
       </button>
@@ -61,8 +72,12 @@ const CardListComponent = () => {
           <table>
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Age</th>
+                <th onClick={() => handleSort("name")}>
+                  Name 🔽{sortKey === "name" }
+                </th>
+                <th onClick={() => handleSort("age")}>
+                  Age 🔽{sortKey === "age" }
+                </th>
                 <th>Occupation</th>
               </tr>
             </thead>

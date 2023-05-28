@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./App.css"
 const LoginPage = ({ handleLogin }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -15,11 +15,12 @@ const LoginPage = ({ handleLogin }) => {
   };
 
   return (
-    <div>
+    <div className="loginContainer">
+      <div className="loginDiv">
       <h2>Login Page</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Username:</label>
+          <label>Username : </label>
           <input
             type="text"
             value={username}
@@ -27,16 +28,17 @@ const LoginPage = ({ handleLogin }) => {
           />
         </div>
         <div>
-          <label>Password:</label>
+          <label>Password : </label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" className="loginBtn">Login</button>
         {error && <p>{error}</p>}
       </form>
+      </div>
     </div>
   );
 };
