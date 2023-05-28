@@ -1,64 +1,70 @@
+# Getting Started with Create React App
 
-## Project Status
-Completed
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Installation and Setup Instructions
-Clone down this repository. You will need node and npm installed globally on your machine.
+## Available Scripts
 
-Installation:
+In the project directory, you can run:
 
-npm install
+### `npm start`
 
-To Run Test Suite:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-npm test
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-To Start Server:
+### `npm test`
 
-npm start
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-To Visit App:
+### `npm run build`
 
-localhost:3000/
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Packages installed
-npm i react-router-dom
-npm i react-modal
-npm i antd
-npm i @ant-design/plots
-npm i @ant-design/graphs
-npm i react-simple-maps
-npm install @react-icons/all-files
-# Overview
-This was a 96hr long project duing the Wasserstoff Hackathon. Project goals included using technologies learned up until this point and familiarizing myself with documentation for features.
-# Requirements
-# There are few points that I have taken care of during building this project
-All layout and structure should exlainatory names.
-All the CSS className are self explainatory.
-Folder strucure should be followed properly.
-Minimal use of Inline CSS.
-Only installed necessary packages and remove unnecessay packages.
-Not used any image for implementation of the project.
-Last and very important tried to give proper comments to every Section possible.
-# Challenges Faced
-One of the biggest challenge i have faced with the dataSet, Since team has not provided any dataset to it was bit difficult to search for the proper dataSet that available globally and should mimic the design requirements of the Figma template.
-Some part of the design was little bit challenging for me to code in alloted time (but this is why it is hackathon) So, after some research to tackel that I used ant-design library for plots and for map I have used react-simple-map library.
-# Approach
-First I have completed the folder structure so I can work on predecided path and deleted unnecessary files and folder (created during create-react-app).
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Then, Two components navbar and footer I built and pass it to the App.js file.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-There was only two page required to build Overview and Dashboard so except these two there was two more pages Statistics and Analytics i have creted a underconstruction message under these two pages (this was not the requiremnt of the project, built for better user Experience).
+### `npm run eject`
 
-Under Overview page i have categoried it into Three section [left, right, and bottom] *** i know it is very straight-forward but yes it is straight-forward ***
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-And like Overview i did same for the Dashboard page two sections [left and right].
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-For positioning the layout and elements i have used CSS property flex (a lot of CSS work).
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-So, now you are having all the basic and important info of the project. I hope you will like my project, I know i can do better than this but have tried my best to implement all the feature and functionalities according to the template in this tight time boundation.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
-## Application Hosted Link
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-https://647325e07d4ce01c60319f44--dancing-fenglisu-4ddcc0.netlify.app/
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
