@@ -57,3 +57,8 @@ And like Overview i did same for the Dashboard page two sections [left and right
 For positioning the layout and elements i have used CSS property flex (a lot of CSS work).
 
 So, now you are having all the basic and important info of the project. I hope you will like my project, I know i can do better than this but have tried my best to implement all the feature and functionalities according to the template in this tight time boundation.
+
+
+## Application Hosted Link
+
+https://647325e07d4ce01c60319f44--dancing-fenglisu-4ddcc0.netlify.app/
